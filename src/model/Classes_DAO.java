@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package model;
 
-/**
- *
- * @author Alunos
- */
+import View.Fruts_GUI;
+import View.Sabores_GUI;
+
+
 public class Classes_DAO {
     
+    public static void sabores(boolean tela){
+        
+        new Sabores_GUI().setVisible(tela);
+}
+    public static void frutas(boolean tela){
+        new Fruts_GUI().setVisible(tela);
+    }
 }
