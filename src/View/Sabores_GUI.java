@@ -39,13 +39,13 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         meioAmargo = new javax.swing.JRadioButton();
+        jLabel42 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         Branco = new javax.swing.JRadioButton();
+        jLabel12 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -59,6 +59,10 @@ public class Sabores_GUI extends javax.swing.JFrame {
         grande = new javax.swing.JRadioButton();
         pequeno = new javax.swing.JRadioButton();
         medio = new javax.swing.JRadioButton();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
@@ -67,9 +71,10 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jButton17 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
@@ -77,6 +82,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jLabel27 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jButton16 = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
@@ -84,6 +90,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
         jPanel14 = new javax.swing.JPanel();
         jButton15 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
@@ -91,6 +98,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
         jPanel15 = new javax.swing.JPanel();
         jButton19 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
@@ -98,6 +106,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
         jButton18 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
@@ -105,6 +114,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jLabel28 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
 
@@ -117,51 +127,66 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel1.add(Image_lbl);
         Image_lbl.setBounds(0, 0, 399, 100);
 
-        jLabel1.setText("Escolha um dos sabores:");
+        jLabel1.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
+        jLabel1.setText("Escolha um dos chocolates:");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(6, 111, 240, 17);
+        jLabel1.setBounds(6, 111, 240, 19);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/meioAmargo.png"))); // NOI18N
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(0, 10, 85, 77);
+        jLabel2.setBounds(0, 20, 75, 75);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel9.setText("Chocolate");
+        jLabel9.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jPanel2.add(jLabel9);
-        jLabel9.setBounds(97, 6, 102, 17);
-
-        jLabel12.setText("Meio-Amargo");
-        jPanel2.add(jLabel12);
-        jLabel12.setBounds(97, 29, 102, 17);
+        jLabel9.setBounds(90, 40, 102, 17);
 
         grupoChocolates.add(meioAmargo);
         meioAmargo.setFocusTraversalPolicyProvider(true);
+        meioAmargo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        meioAmargo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                meioAmargoActionPerformed(evt);
+            }
+        });
         jPanel2.add(meioAmargo);
-        meioAmargo.setBounds(220, 80, 19, 19);
+        meioAmargo.setBounds(200, 45, 30, 30);
+
+        jLabel42.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel42.setText("Meio-Amargo");
+        jPanel2.add(jLabel42);
+        jLabel42.setBounds(90, 60, 102, 17);
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(6, 146, 240, 100);
+        jPanel2.setBounds(10, 150, 240, 120);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(null);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Branco.jpg"))); // NOI18N
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(jLabel3);
-        jLabel3.setBounds(6, 6, 83, 90);
+        jLabel3.setBounds(0, 20, 75, 75);
 
-        jLabel10.setText("Chocolate");
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel10.setText("Branco");
         jPanel3.add(jLabel10);
-        jLabel10.setBounds(101, 6, 102, 17);
-
-        jLabel13.setText("Branco");
-        jPanel3.add(jLabel13);
-        jLabel13.setBounds(101, 29, 102, 17);
+        jLabel10.setBounds(90, 60, 102, 14);
 
         grupoChocolates.add(Branco);
+        Branco.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel3.add(Branco);
-        Branco.setBounds(220, 100, 19, 19);
+        Branco.setBounds(200, 45, 30, 30);
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel12.setText("Chocolate");
+        jPanel3.add(jLabel12);
+        jLabel12.setBounds(90, 40, 102, 14);
 
         jPanel1.add(jPanel3);
         jPanel3.setBounds(10, 280, 240, 120);
@@ -170,60 +195,91 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel4.setLayout(null);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AoLeite.jpg"))); // NOI18N
+        jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel4.add(jLabel4);
-        jLabel4.setBounds(6, 6, 81, 90);
+        jLabel4.setBounds(0, 20, 75, 75);
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("Chocolate");
         jPanel4.add(jLabel11);
-        jLabel11.setBounds(93, 6, 102, 17);
+        jLabel11.setBounds(90, 40, 102, 17);
 
+        jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("Ao Leite");
         jPanel4.add(jLabel14);
-        jLabel14.setBounds(90, 30, 77, 17);
+        jLabel14.setBounds(90, 60, 77, 17);
 
         grupoChocolates.add(Leite);
+        Leite.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        Leite.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Leite.setName(""); // NOI18N
         jPanel4.add(Leite);
-        Leite.setBounds(220, 80, 19, 19);
+        Leite.setBounds(200, 45, 30, 30);
 
         jPanel1.add(jPanel4);
-        jPanel4.setBounds(10, 440, 240, 100);
+        jPanel4.setBounds(10, 410, 240, 120);
 
-        jLabel5.setText("Tamanho do copo:");
+        jLabel5.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
+        jLabel5.setText("Tamanho:");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(264, 111, 140, 17);
+        jLabel5.setBounds(264, 111, 140, 19);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setLayout(null);
 
-        jLabel6.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
-        jLabel6.setText("Pequeno: R$: 7,00");
+        jLabel6.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
+        jLabel6.setText("R$: 11,00");
         jPanel5.add(jLabel6);
-        jLabel6.setBounds(10, 11, 101, 40);
+        jLabel6.setBounds(10, 160, 101, 16);
 
-        jLabel7.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
-        jLabel7.setText("Grande: R$: 11,00");
+        jLabel7.setFont(new java.awt.Font("Liberation Sans", 1, 12)); // NOI18N
+        jLabel7.setText("Grande: 600 ml");
         jPanel5.add(jLabel7);
-        jLabel7.setBounds(10, 103, 101, 40);
+        jLabel7.setBounds(10, 140, 101, 16);
 
-        jLabel8.setFont(new java.awt.Font("Liberation Sans", 0, 10)); // NOI18N
-        jLabel8.setText("Médio: R$: 9,00");
+        jLabel8.setFont(new java.awt.Font("Liberation Sans", 1, 12)); // NOI18N
+        jLabel8.setText("Médio: 500ml");
         jPanel5.add(jLabel8);
-        jLabel8.setBounds(10, 57, 101, 40);
+        jLabel8.setBounds(10, 70, 101, 16);
 
         grupoTamanhos.add(grande);
+        grande.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         grande.setText("Grande");
         jPanel5.add(grande);
-        grande.setBounds(10, 310, 100, 21);
+        grande.setBounds(5, 370, 120, 23);
 
         grupoTamanhos.add(pequeno);
+        pequeno.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         pequeno.setText("Pequeno");
         jPanel5.add(pequeno);
-        pequeno.setBounds(10, 250, 100, 21);
+        pequeno.setBounds(5, 310, 120, 23);
 
         grupoTamanhos.add(medio);
+        medio.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         medio.setText("Médio");
         jPanel5.add(medio);
-        medio.setBounds(10, 280, 100, 21);
+        medio.setBounds(5, 340, 120, 23);
+
+        jLabel13.setFont(new java.awt.Font("Liberation Sans", 1, 12)); // NOI18N
+        jLabel13.setText("Pequeno: 300ml");
+        jPanel5.add(jLabel13);
+        jLabel13.setBounds(10, 11, 101, 16);
+
+        jLabel49.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
+        jLabel49.setText("R$: 7,00");
+        jPanel5.add(jLabel49);
+        jLabel49.setBounds(10, 30, 101, 16);
+
+        jLabel50.setFont(new java.awt.Font("Liberation Sans", 0, 12)); // NOI18N
+        jLabel50.setText("R$: 9,00");
+        jPanel5.add(jLabel50);
+        jLabel50.setBounds(10, 90, 101, 16);
+
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/foundiePot.png"))); // NOI18N
+        jLabel16.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel5.add(jLabel16);
+        jLabel16.setBounds(30, 200, 70, 70);
 
         jPanel1.add(jPanel5);
         jPanel5.setBounds(264, 146, 130, 400);
@@ -238,7 +294,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(420, 570, 370, 22);
+        jButton1.setBounds(420, 570, 370, 27);
 
         jButton2.setBackground(new java.awt.Color(102, 0, 0));
         jButton2.setFont(new java.awt.Font("Liberation Sans", 1, 13)); // NOI18N
@@ -250,7 +306,7 @@ public class Sabores_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(10, 570, 373, 22);
+        jButton2.setBounds(10, 570, 373, 27);
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/frutas.jpg"))); // NOI18N
         jPanel1.add(jLabel15);
@@ -285,20 +341,26 @@ public class Sabores_GUI extends javax.swing.JFrame {
 
         jLabel22.setText("Kiwi");
         jPanel8.add(jLabel22);
-        jLabel22.setBounds(6, 88, 98, 17);
+        jLabel22.setBounds(6, 84, 98, 14);
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/kiwi.png"))); // NOI18N
-        jLabel16.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jPanel8.add(jLabel16);
-        jLabel16.setBounds(6, 6, 98, 76);
-
-        jLabel30.setText("R$: 3,00");
-        jPanel8.add(jLabel30);
-        jLabel30.setBounds(6, 111, 98, 17);
-
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel36.setText("CÓD:1");
         jPanel8.add(jLabel36);
-        jLabel36.setBounds(38, 0, 70, 17);
+        jLabel36.setBounds(0, 0, 110, 14);
+
+        jLabel43.setText("R$: 3,00");
+        jPanel8.add(jLabel43);
+        jLabel43.setBounds(6, 100, 98, 14);
+
+        jLabel44.setText("Estoque: ");
+        jPanel8.add(jLabel44);
+        jLabel44.setBounds(6, 115, 98, 14);
+
+        jLabel51.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/kiwi.png"))); // NOI18N
+        jLabel51.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel8.add(jLabel51);
+        jLabel51.setBounds(6, 6, 98, 76);
 
         jPanel6.add(jPanel8);
         jPanel8.setBounds(10, 10, 110, 180);
@@ -327,24 +389,30 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel10.add(jButton22);
         jButton22.setBounds(58, 146, 46, 31);
 
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/banana.png"))); // NOI18N
         jPanel10.add(jLabel19);
         jLabel19.setBounds(6, 6, 98, 76);
 
         jLabel27.setText("Banana");
         jPanel10.add(jLabel27);
-        jLabel27.setBounds(6, 88, 84, 17);
+        jLabel27.setBounds(6, 84, 84, 14);
 
         jLabel33.setText("R$: 3,00");
         jPanel10.add(jLabel33);
-        jLabel33.setBounds(6, 111, 98, 17);
+        jLabel33.setBounds(6, 100, 98, 14);
 
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("CÓD:1");
         jPanel10.add(jLabel39);
-        jLabel39.setBounds(38, 0, 70, 17);
+        jLabel39.setBounds(0, 0, 110, 14);
+
+        jLabel47.setText("Estoque: ");
+        jPanel10.add(jLabel47);
+        jLabel47.setBounds(6, 115, 98, 14);
 
         jPanel6.add(jPanel10);
-        jPanel10.setBounds(10, 213, 110, 180);
+        jPanel10.setBounds(10, 210, 110, 180);
 
         jPanel13.setLayout(null);
 
@@ -370,21 +438,27 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel13.add(jButton21);
         jButton21.setBounds(58, 146, 46, 31);
 
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/maca.png"))); // NOI18N
         jPanel13.add(jLabel18);
         jLabel18.setBounds(6, 6, 98, 76);
 
         jLabel26.setText("Maça");
         jPanel13.add(jLabel26);
-        jLabel26.setBounds(6, 88, 98, 17);
+        jLabel26.setBounds(6, 84, 98, 14);
 
         jLabel32.setText("R$: 3,00");
         jPanel13.add(jLabel32);
-        jLabel32.setBounds(10, 110, 98, 17);
+        jLabel32.setBounds(6, 100, 98, 14);
 
+        jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel38.setText("CÓD:3");
         jPanel13.add(jLabel38);
-        jLabel38.setBounds(38, 0, 70, 17);
+        jLabel38.setBounds(0, 0, 110, 14);
+
+        jLabel46.setText("Estoque: ");
+        jPanel13.add(jLabel46);
+        jLabel46.setBounds(6, 115, 98, 14);
 
         jPanel6.add(jPanel13);
         jPanel13.setBounds(250, 10, 110, 180);
@@ -413,21 +487,27 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel14.add(jButton20);
         jButton20.setBounds(58, 146, 46, 31);
 
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/morango.png"))); // NOI18N
         jPanel14.add(jLabel17);
         jLabel17.setBounds(6, 6, 98, 76);
 
         jLabel25.setText("Morango");
         jPanel14.add(jLabel25);
-        jLabel25.setBounds(6, 88, 90, 17);
+        jLabel25.setBounds(6, 84, 90, 14);
 
         jLabel31.setText("R$: 3,00");
         jPanel14.add(jLabel31);
-        jLabel31.setBounds(6, 111, 98, 17);
+        jLabel31.setBounds(6, 100, 98, 14);
 
+        jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("CÓD:2");
         jPanel14.add(jLabel37);
-        jLabel37.setBounds(38, 0, 70, 17);
+        jLabel37.setBounds(0, 0, 110, 14);
+
+        jLabel45.setText("Estoque: ");
+        jPanel14.add(jLabel45);
+        jLabel45.setBounds(6, 115, 98, 14);
 
         jPanel6.add(jPanel14);
         jPanel14.setBounds(130, 10, 110, 180);
@@ -456,21 +536,27 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel15.add(jButton24);
         jButton24.setBounds(58, 143, 46, 31);
 
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/caqui.png"))); // NOI18N
         jPanel15.add(jLabel21);
         jLabel21.setBounds(6, 6, 98, 76);
 
         jLabel29.setText("Caqui");
         jPanel15.add(jLabel29);
-        jLabel29.setBounds(6, 88, 98, 17);
+        jLabel29.setBounds(6, 84, 98, 14);
 
         jLabel35.setText("R$: 3,00");
         jPanel15.add(jLabel35);
-        jLabel35.setBounds(6, 111, 98, 17);
+        jLabel35.setBounds(6, 100, 98, 14);
 
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel41.setText("CÓD:1");
         jPanel15.add(jLabel41);
-        jLabel41.setBounds(38, 0, 70, 17);
+        jLabel41.setBounds(0, 0, 110, 14);
+
+        jLabel30.setText("Estoque: ");
+        jPanel15.add(jLabel30);
+        jLabel30.setBounds(6, 115, 98, 14);
 
         jPanel6.add(jPanel15);
         jPanel15.setBounds(250, 210, 110, 180);
@@ -499,35 +585,43 @@ public class Sabores_GUI extends javax.swing.JFrame {
         jPanel16.add(jButton23);
         jButton23.setBounds(58, 143, 46, 31);
 
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/pera.png"))); // NOI18N
         jPanel16.add(jLabel20);
         jLabel20.setBounds(6, 6, 98, 76);
 
         jLabel28.setText("Pera");
         jPanel16.add(jLabel28);
-        jLabel28.setBounds(6, 88, 98, 17);
+        jLabel28.setBounds(6, 84, 98, 14);
 
         jLabel34.setText("R$: 3,00");
         jPanel16.add(jLabel34);
-        jLabel34.setBounds(6, 111, 98, 17);
+        jLabel34.setBounds(6, 100, 98, 14);
 
+        jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setText("CÓD:1");
         jPanel16.add(jLabel40);
-        jLabel40.setBounds(38, 0, 70, 17);
+        jLabel40.setBounds(0, 0, 110, 14);
+
+        jLabel48.setText("Estoque: ");
+        jPanel16.add(jLabel48);
+        jLabel48.setBounds(6, 115, 98, 14);
 
         jPanel6.add(jPanel16);
         jPanel16.setBounds(130, 210, 110, 180);
 
         jPanel1.add(jPanel6);
-        jPanel6.setBounds(420, 150, 370, 400);
+        jPanel6.setBounds(410, 150, 380, 400);
 
+        jLabel23.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
         jLabel23.setText("Acompanhamento(s):");
         jPanel1.add(jLabel23);
-        jLabel23.setBounds(420, 110, 150, 17);
+        jLabel23.setBounds(420, 105, 180, 19);
 
+        jLabel24.setFont(new java.awt.Font("NSimSun", 1, 16)); // NOI18N
         jLabel24.setText("porção de 100g");
         jPanel1.add(jLabel24);
-        jLabel24.setBounds(660, 110, 130, 17);
+        jLabel24.setBounds(420, 120, 130, 19);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -601,6 +695,10 @@ public class Sabores_GUI extends javax.swing.JFrame {
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         model.Classes_DAO.Caqui();
     }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void meioAmargoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_meioAmargoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_meioAmargoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -694,7 +792,17 @@ public class Sabores_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;

@@ -27,10 +27,14 @@ public class EmFalta extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        Falta1 = new javax.swing.JLabel();
+        Falta2 = new javax.swing.JLabel();
+        Falta3 = new javax.swing.JLabel();
+        Falta4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -44,6 +48,18 @@ public class EmFalta extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
+        jLabel5.setText("Estão em falta os ingredientes:");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(10, 87, 160, 30);
+        jPanel1.add(Falta1);
+        Falta1.setBounds(10, 150, 130, 20);
+        jPanel1.add(Falta2);
+        Falta2.setBounds(10, 180, 130, 20);
+        jPanel1.add(Falta3);
+        Falta3.setBounds(10, 210, 130, 20);
+        jPanel1.add(Falta4);
+        Falta4.setBounds(10, 120, 130, 20);
+
         jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(204, 0, 0));
         jLabel3.setText("ERROR!!!");
@@ -54,16 +70,12 @@ public class EmFalta extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(153, 0, 0));
         jLabel4.setText("Poucos ingredientes no estoque!! ");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 50, 380, 19);
+        jLabel4.setBounds(10, 50, 380, 21);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fondue-chocolate.jpg"))); // NOI18N
         jLabel1.setOpaque(true);
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 400, 80);
-
-        jLabel5.setText("Estão em falta os ingredientes:");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 87, 290, 30);
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -180,6 +192,10 @@ public class EmFalta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Falta1;
+    private javax.swing.JLabel Falta2;
+    private javax.swing.JLabel Falta3;
+    private javax.swing.JLabel Falta4;
     private javax.swing.JLabel acabando1;
     private javax.swing.JLabel acabando2;
     private javax.swing.JLabel acabando3;
