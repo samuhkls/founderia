@@ -29,8 +29,8 @@ public class InputIngrediente_GUI extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox();
-        jSpinner1 = new javax.swing.JSpinner();
+        cmbIngrediente = new javax.swing.JComboBox();
+        spnGramas = new javax.swing.JSpinner();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
@@ -38,6 +38,7 @@ public class InputIngrediente_GUI extends javax.swing.JFrame {
         setTitle("Inserir produtos");
         setUndecorated(true);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -46,14 +47,14 @@ public class InputIngrediente_GUI extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(230, 10, 140, 32);
 
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Caqui", "Pera", "Morango", "Banana", "Maçã", "Kiwi", "Chocolate branco", "Chocolate amargo", "Chocolate ao leite", " " }));
-        jPanel1.add(jComboBox1);
-        jComboBox1.setBounds(10, 50, 160, 30);
+        cmbIngrediente.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        cmbIngrediente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Caqui", "Pera", "Morango", "Banana", "Maçã", "Kiwi", "Chocolate branco", "Chocolate amargo", "Chocolate ao leite", " " }));
+        jPanel1.add(cmbIngrediente);
+        cmbIngrediente.setBounds(10, 50, 160, 30);
 
-        jSpinner1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jPanel1.add(jSpinner1);
-        jSpinner1.setBounds(220, 50, 150, 30);
+        spnGramas.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jPanel1.add(spnGramas);
+        spnGramas.setBounds(220, 50, 150, 30);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("Insira o ingrediente");
@@ -88,6 +89,7 @@ public class InputIngrediente_GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        model.Classes_DAO.addIngrediente();
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -127,11 +129,11 @@ public class InputIngrediente_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JComboBox cmbIngrediente;
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSpinner jSpinner1;
+    public static javax.swing.JSpinner spnGramas;
     // End of variables declaration//GEN-END:variables
 }

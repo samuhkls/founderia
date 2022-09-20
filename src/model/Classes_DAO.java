@@ -187,36 +187,83 @@ public class Classes_DAO {
         
         if(caq <= 200){ 
             EmFalta_GUI.lblAcabCaqui.setText("Caqui em falta");
+        } else{
+            EmFalta_GUI.lblAcabCaqui.setText("");
         }
+        
         if (per <= 200){
             EmFalta_GUI.lblAcabPera.setText("Pera em falta");
+        } else{
+            EmFalta_GUI.lblAcabPera.setText("");
         }
+        
         if (morang <= 200){
             EmFalta_GUI.lblAcabMorango.setText("Morango em falta");
+        } else{
+            EmFalta_GUI.lblAcabMorango.setText("");
         }
+        
         if (banan <= 200){
             EmFalta_GUI.lblAcabBanana.setText("Banana em falta");
+        } else{
+            EmFalta_GUI.lblAcabBanana.setText("");
         }
+        
         if (mac <= 200){
             EmFalta_GUI.lblAcabMaca.setText("Maçã em falta");
+        } else{
+            EmFalta_GUI.lblAcabMaca.setText("");
         }
+        
         if (kiwi <= 200){
             EmFalta_GUI.lblAcabKiwi.setText("Kiwi em falta");
+        } else{
+            EmFalta_GUI.lblAcabKiwi.setText("");
         }
+        
         if (ao_leite <= 200){
-            EmFalta_GUI.lblAcabKiwi.setText("Chocolate ao leite em falta");
+            EmFalta_GUI.lblAcabChocLeit.setText("Chocolate ao leite em falta");
+        } else{
+            EmFalta_GUI.lblAcabChocLeit.setText("");
         }
+        
         if (meio_amargo <= 200){
-            EmFalta_GUI.lblAcabKiwi.setText("Chocolate meio amargo em falta");
+            EmFalta_GUI.lblAcabChocAmarg.setText("Chocolate meio amargo em falta");
+        } else{
+            EmFalta_GUI.lblAcabChocAmarg.setText("");
         }
+        
         if (branco <= 200){
-            EmFalta_GUI.lblAcabKiwi.setText("Chocolate branco em falta");
+            EmFalta_GUI.lblAcabChocBranco.setText("Chocolate branco em falta");
+        } else{
+            EmFalta_GUI.lblAcabChocBranco.setText("");
         }
+        
         
     }
     
     public static void addIngrediente (){
+        String ingrediente = (String) InputIngrediente_GUI.cmbIngrediente.getSelectedItem();
+        int qntd = (int) InputIngrediente_GUI.spnGramas.getValue();
         
-    }
+        if (ingrediente.equals("Pera")){
+            per = per + qntd;
+        }else if (ingrediente.equals("morango")){
+            morang = morang + qntd;
+        }else if (ingrediente.equals("Banana")){
+            banan = banan + qntd;
+        }else if (ingrediente.equals("Maçã")){
+            mac = mac + qntd;
+        }else if (ingrediente.equals("Kiwi")){
+            kiwi = kiwi + qntd;
+        }else if (ingrediente.equals("Chocolate branco")){
+            branco = branco + qntd;
+        }else if (ingrediente.equals("Chocolate amargo")){
+            meio_amargo = per + qntd;
+        }else if (ingrediente.equals("Chocolate ao leite")){
+            ao_leite = ao_leite + qntd;
+        }
     
+    }
+
 }

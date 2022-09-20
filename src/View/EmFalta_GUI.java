@@ -115,6 +115,24 @@ public class EmFalta_GUI extends javax.swing.JFrame {
             }
         });
 
+        lblAcabCaqui.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabPera.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabMorango.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabBanana.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabMaca.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabKiwi.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabChocBranco.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabChocAmarg.setForeground(new java.awt.Color(153, 0, 0));
+
+        lblAcabChocLeit.setForeground(new java.awt.Color(153, 0, 0));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
