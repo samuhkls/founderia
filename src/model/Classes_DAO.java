@@ -170,7 +170,13 @@ public class Classes_DAO {
     }
     public static void NotaFiscal(){
         
-        System.out.println(Tam[0]+"Sabor"+Tam[1]+"Valor unitario"+valorUnitario+"Acompanhamentos:"+k+"porções de kiwi, Valor Total"+ValorTotal);
+        System.out.println(Tam[0]+"Sabor"+Tam[1]+"Valor unitario"+valorUnitario+"Acompanhamentos:\n");
+        for(i=0;i<6;i++){
+            if(Fiscal[i]!=null){
+                System.out.println(Fiscal[i]+" Preço unitario da porção: R$3,00");
+            }
+            
+        }
     }
     
     public static void atualizarEstoque(){
