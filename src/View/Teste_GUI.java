@@ -12,6 +12,7 @@ public class Teste_GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         imagem_lbl = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
@@ -39,17 +40,25 @@ public class Teste_GUI extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
+        jLabel3.setFont(new java.awt.Font("Verdana", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("FOUNDERIA");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(190, 40, 330, 50);
+
         jButton1.setBackground(new java.awt.Color(255, 0, 0));
         jButton1.setFont(new java.awt.Font("Liberation Sans", 1, 10)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("X");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 0, 0)));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(648, 0, 50, 30);
+        jButton1.setBounds(650, 0, 50, 30);
 
         imagem_lbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fondue-chocolate.jpg"))); // NOI18N
         jPanel1.add(imagem_lbl);
@@ -324,6 +333,7 @@ public class Teste_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
