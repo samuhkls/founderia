@@ -267,12 +267,12 @@ public class Teste_GUI extends javax.swing.JFrame {
 
     private void saboresBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saboresBtnActionPerformed
          boolean tela=true;
-         model.Classes_DAO.sabores(tela);
+         model.Classes_DAO.abrirSabores(tela);
     }//GEN-LAST:event_saboresBtnActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         boolean tela=true;
-        model.Classes_DAO.estoque(tela);
+        model.Classes_DAO.abrirEstoque(tela);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void Adicionar_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Adicionar_btnActionPerformed

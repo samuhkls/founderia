@@ -46,6 +46,9 @@ public class EmFalta_GUI extends javax.swing.JFrame {
         lblAcabBanana = new javax.swing.JLabel();
         lblAcabMaca = new javax.swing.JLabel();
         lblAcabKiwi = new javax.swing.JLabel();
+        lblAcabChocBranco = new javax.swing.JLabel();
+        lblAcabChocAmarg = new javax.swing.JLabel();
+        lblAcabChocLeit = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -57,9 +60,8 @@ public class EmFalta_GUI extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        lblEstqKiwi1 = new javax.swing.JLabel();
-        lblEstqKiwi2 = new javax.swing.JLabel();
-        lblEstqBranco1 = new javax.swing.JLabel();
+        lblEstqKiwi = new javax.swing.JLabel();
+        lblEstqBranco = new javax.swing.JLabel();
         lblEstqAmargo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,41 +69,41 @@ public class EmFalta_GUI extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Liberation Sans", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel3.setText("ERROR!!!");
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Medium", 1, 18)); // NOI18N
+        jLabel3.setText("ESTOQUE");
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, 10, 120, 50);
 
-        jLabel4.setFont(new java.awt.Font("Liberation Sans", 0, 16)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(153, 0, 0));
-        jLabel4.setText("Poucos ingredientes no estoque!! ");
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Medium", 0, 16)); // NOI18N
+        jLabel4.setText("Verifique quantos ingredientes ainda temos no estoque");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 50, 380, 21);
+        jLabel4.setBounds(10, 50, 380, 19);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/fondue-chocolate.jpg"))); // NOI18N
         jLabel1.setOpaque(true);
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 400, 80);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setText("Lista do estoque dos itens");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 87, 160, 14);
+        jLabel5.setBounds(10, 90, 210, 14);
         jPanel1.add(lblEstqPera);
-        lblEstqPera.setBounds(120, 140, 50, 13);
+        lblEstqPera.setBounds(170, 140, 50, 13);
         jPanel1.add(lblEstqMorango);
-        lblEstqMorango.setBounds(120, 160, 50, 13);
+        lblEstqMorango.setBounds(170, 160, 50, 13);
         jPanel1.add(lblEstqAoLeite);
-        lblEstqAoLeite.setBounds(120, 280, 50, 13);
+        lblEstqAoLeite.setBounds(170, 280, 50, 13);
         jPanel1.add(lblEstqCaqui);
-        lblEstqCaqui.setBounds(120, 120, 50, 13);
+        lblEstqCaqui.setBounds(170, 120, 50, 13);
         jPanel1.add(lblEstqBanana);
-        lblEstqBanana.setBounds(120, 180, 50, 13);
+        lblEstqBanana.setBounds(170, 180, 50, 13);
         jPanel1.add(lblEstqMaca);
-        lblEstqMaca.setBounds(120, 200, 50, 13);
+        lblEstqMaca.setBounds(170, 200, 50, 13);
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 204));
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Perto de acabar:");
 
         jButton1.setBackground(new java.awt.Color(0, 102, 0));
@@ -127,15 +129,18 @@ public class EmFalta_GUI extends javax.swing.JFrame {
                     .addComponent(lblAcabBanana, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblAcabMaca, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblAcabKiwi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblAcabKiwi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblAcabChocBranco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblAcabChocAmarg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblAcabChocLeit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(8, 8, 8)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(lblAcabCaqui, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblAcabPera, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -147,7 +152,13 @@ public class EmFalta_GUI extends javax.swing.JFrame {
                 .addComponent(lblAcabMaca, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblAcabKiwi, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAcabChocBranco, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAcabChocAmarg, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblAcabChocLeit, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -177,49 +188,47 @@ public class EmFalta_GUI extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(10, 320, 100, 38);
 
-        jLabel6.setText("Chocolate Leite");
+        jLabel6.setText("Chocolate ao leite:");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(10, 280, 100, 14);
+        jLabel6.setBounds(10, 280, 130, 14);
 
         jLabel7.setText("Caqui:");
         jPanel1.add(jLabel7);
-        jLabel7.setBounds(10, 120, 100, 14);
+        jLabel7.setBounds(10, 120, 130, 14);
 
         jLabel8.setText("Pera:");
         jPanel1.add(jLabel8);
-        jLabel8.setBounds(10, 140, 100, 14);
+        jLabel8.setBounds(10, 140, 130, 14);
 
         jLabel9.setText("Morango:");
         jPanel1.add(jLabel9);
-        jLabel9.setBounds(10, 160, 100, 14);
+        jLabel9.setBounds(10, 160, 130, 14);
 
         jLabel10.setText("Banana:");
         jPanel1.add(jLabel10);
-        jLabel10.setBounds(10, 180, 100, 14);
+        jLabel10.setBounds(10, 180, 130, 14);
 
-        jLabel11.setText("Chocolate Amargo");
+        jLabel11.setText("Chocolate meio amargo:");
         jPanel1.add(jLabel11);
-        jLabel11.setBounds(10, 260, 100, 14);
+        jLabel11.setBounds(10, 260, 130, 14);
 
         jLabel12.setText("Chocolate branco:");
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(10, 240, 100, 14);
+        jLabel12.setBounds(10, 240, 130, 14);
 
         jLabel13.setText("Maçã:");
         jPanel1.add(jLabel13);
-        jLabel13.setBounds(10, 200, 100, 14);
+        jLabel13.setBounds(10, 200, 130, 14);
 
         jLabel14.setText("Kiwi:");
         jPanel1.add(jLabel14);
-        jLabel14.setBounds(10, 220, 100, 14);
-        jPanel1.add(lblEstqKiwi1);
-        lblEstqKiwi1.setBounds(80, 220, 50, 13);
-        jPanel1.add(lblEstqKiwi2);
-        lblEstqKiwi2.setBounds(120, 220, 50, 13);
-        jPanel1.add(lblEstqBranco1);
-        lblEstqBranco1.setBounds(120, 240, 50, 13);
+        jLabel14.setBounds(10, 220, 130, 14);
+        jPanel1.add(lblEstqKiwi);
+        lblEstqKiwi.setBounds(170, 220, 50, 13);
+        jPanel1.add(lblEstqBranco);
+        lblEstqBranco.setBounds(170, 240, 50, 13);
         jPanel1.add(lblEstqAmargo);
-        lblEstqAmargo.setBounds(120, 260, 50, 13);
+        lblEstqAmargo.setBounds(170, 260, 50, 13);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -241,7 +250,8 @@ public class EmFalta_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
+        boolean tela=true;
+        model.Classes_DAO.inserirIngr(tela);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -308,6 +318,9 @@ public class EmFalta_GUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     public static javax.swing.JLabel lblAcabBanana;
     public static javax.swing.JLabel lblAcabCaqui;
+    public static javax.swing.JLabel lblAcabChocAmarg;
+    public static javax.swing.JLabel lblAcabChocBranco;
+    public static javax.swing.JLabel lblAcabChocLeit;
     public static javax.swing.JLabel lblAcabKiwi;
     public static javax.swing.JLabel lblAcabMaca;
     public static javax.swing.JLabel lblAcabMorango;
@@ -315,10 +328,9 @@ public class EmFalta_GUI extends javax.swing.JFrame {
     public static javax.swing.JLabel lblEstqAmargo;
     public static javax.swing.JLabel lblEstqAoLeite;
     public static javax.swing.JLabel lblEstqBanana;
-    public static javax.swing.JLabel lblEstqBranco1;
+    public static javax.swing.JLabel lblEstqBranco;
     public static javax.swing.JLabel lblEstqCaqui;
-    public static javax.swing.JLabel lblEstqKiwi1;
-    public static javax.swing.JLabel lblEstqKiwi2;
+    public static javax.swing.JLabel lblEstqKiwi;
     public static javax.swing.JLabel lblEstqMaca;
     public static javax.swing.JLabel lblEstqMorango;
     public static javax.swing.JLabel lblEstqPera;

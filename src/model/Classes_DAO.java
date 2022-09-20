@@ -24,6 +24,10 @@ import static model.Estoque.mac;
 import static model.Estoque.morang;
 import static model.Estoque.per;
 import View.EmFalta_GUI;
+import View.InputIngrediente_GUI;
+import javax.swing.JOptionPane;
+import static model.Estoque.branco;
+import static model.Estoque.meio_amargo;
 
 
 
@@ -43,16 +47,20 @@ public class Classes_DAO {
     
 
     
-    public static void sabores(boolean tela){
+    public static void abrirSabores(boolean tela){
         
         new Sabores_GUI().setVisible(tela);
     }
     
-    public static void estoque(boolean tela){
+    public static void abrirEstoque(boolean tela){
         
         new EmFalta_GUI().setVisible(tela);
     }
     
+    public static void inserirIngr(boolean tela){
+        
+        new InputIngrediente_GUI().setVisible(tela);
+    }
     
     public static void Tamanho(){
         if(pequeno.isSelected()){
@@ -172,9 +180,12 @@ public class Classes_DAO {
         EmFalta_GUI.lblEstqMorango.setText(morang+"g");
         EmFalta_GUI.lblEstqBanana.setText(banan+"g");
         EmFalta_GUI.lblEstqMaca.setText(mac+"g");
-        EmFalta_GUI.lblEstqAoLeite.setText(kiwi+"g");
+        EmFalta_GUI.lblEstqKiwi.setText(kiwi+"g");
+        EmFalta_GUI.lblEstqBranco.setText(branco+"g");
+        EmFalta_GUI.lblEstqAoLeite.setText(ao_leite+"g");
+        EmFalta_GUI.lblEstqAmargo.setText(meio_amargo+"g");
         
-        if(caq <= 200){
+        if(caq <= 200){ 
             EmFalta_GUI.lblAcabCaqui.setText("Caqui em falta");
         }
         if (per <= 200){
@@ -192,6 +203,19 @@ public class Classes_DAO {
         if (kiwi <= 200){
             EmFalta_GUI.lblAcabKiwi.setText("Kiwi em falta");
         }
+        if (ao_leite <= 200){
+            EmFalta_GUI.lblAcabKiwi.setText("Chocolate ao leite em falta");
+        }
+        if (meio_amargo <= 200){
+            EmFalta_GUI.lblAcabKiwi.setText("Chocolate meio amargo em falta");
+        }
+        if (branco <= 200){
+            EmFalta_GUI.lblAcabKiwi.setText("Chocolate branco em falta");
+        }
+        
+    }
+    
+    public static void addIngrediente (){
         
     }
     
