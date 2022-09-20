@@ -274,7 +274,7 @@ public class Teste_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void Finalizar_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Finalizar_btnActionPerformed
-        // TODO add your handling code here:
+        new Cliente_GUI().setVisible(true);
     }//GEN-LAST:event_Finalizar_btnActionPerformed
 
     private void Cancelar_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancelar_btnActionPerformed
@@ -288,7 +288,6 @@ public class Teste_GUI extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         boolean tela=true;
-         model.Classes_DAO.frutas(tela);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
