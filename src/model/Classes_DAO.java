@@ -171,9 +171,27 @@ public class Classes_DAO {
         EmFalta_GUI.lblEstqPera.setText(per+"g");
         EmFalta_GUI.lblEstqMorango.setText(morang+"g");
         EmFalta_GUI.lblEstqBanana.setText(banan+"g");
-        EmFalta_GUI.lblEstqPera.setText(per+"g");
         EmFalta_GUI.lblEstqMaca.setText(mac+"g");
-        EmFalta_GUI.lblEstqKiwi.setText(kiwi+"g");
+        EmFalta_GUI.lblEstqAoLeite.setText(kiwi+"g");
+        
+        if(caq <= 200){
+            EmFalta_GUI.lblAcabCaqui.setText("Caqui em falta");
+        }
+        if (per <= 200){
+            EmFalta_GUI.lblAcabPera.setText("Pera em falta");
+        }
+        if (morang <= 200){
+            EmFalta_GUI.lblAcabMorango.setText("Morango em falta");
+        }
+        if (banan <= 200){
+            EmFalta_GUI.lblAcabBanana.setText("Banana em falta");
+        }
+        if (mac <= 200){
+            EmFalta_GUI.lblAcabMaca.setText("Maçã em falta");
+        }
+        if (kiwi <= 200){
+            EmFalta_GUI.lblAcabKiwi.setText("Kiwi em falta");
+        }
         
     }
     

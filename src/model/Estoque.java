@@ -12,6 +12,6 @@ public class Estoque {
     public static int per = 2000;
     public static int banan= 2000;
     public static int mac = 2000;
-    public static int morang = 2000;
+    public static int morang = 1000;
     
 }
