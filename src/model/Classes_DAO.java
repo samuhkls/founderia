@@ -2,7 +2,7 @@
 package model;
 
 
-import View.EmFalta;
+import View.EmFalta_GUI;
 import View.Sabores_GUI;
 import static View.Sabores_GUI.Branco;
 import static View.Sabores_GUI.Leite;
@@ -23,6 +23,7 @@ import static model.Estoque.kiwi;
 import static model.Estoque.mac;
 import static model.Estoque.morang;
 import static model.Estoque.per;
+import View.EmFalta_GUI;
 
 
 
@@ -46,6 +47,12 @@ public class Classes_DAO {
         
         new Sabores_GUI().setVisible(tela);
     }
+    
+    public static void estoque(boolean tela){
+        
+        new EmFalta_GUI().setVisible(tela);
+    }
+    
     
     public static void Tamanho(){
         if(pequeno.isSelected()){
@@ -85,7 +92,7 @@ public class Classes_DAO {
         
         kiwi=(int) (kiwi-(k*100)); 
         if(kiwi<=200){
-            new EmFalta().setVisible(true);
+            new EmFalta_GUI().setVisible(true);
         }
         if(k!=0){
             Fiscal[0]=k+" porcão de kiwi";
@@ -98,7 +105,7 @@ public class Classes_DAO {
         ValorTotal=ValorTotal+morango;
         morang=(int) (morang-(g*100)); 
         if(morang<=200){
-            new EmFalta().setVisible(true);
+            new EmFalta_GUI().setVisible(true);
         }
         if(g!=0){
             Fiscal[1]=g+" porcão de morango";
@@ -110,7 +117,7 @@ public class Classes_DAO {
         ValorTotal=ValorTotal+pera;
         per=(int) (per-(p*100)); 
         if(per<=200){
-            new EmFalta().setVisible(true);
+            new EmFalta_GUI().setVisible(true);
         }
         if(p!=0){
             Fiscal[2]=p+" porcão de pera";
@@ -122,7 +129,7 @@ public class Classes_DAO {
         ValorTotal=ValorTotal+banana;
         banan=(int) (banan-(b*100)); 
         if(banan<=200){
-            new EmFalta().setVisible(true);
+            new EmFalta_GUI().setVisible(true);
         }
         if(b!=0){
             Fiscal[3]=b+" porcão de banana";
@@ -134,7 +141,7 @@ public class Classes_DAO {
         ValorTotal=ValorTotal+maca;
         mac=(int) (mac-(m*100)); 
         if(mac<=200){
-            new EmFalta().setVisible(true);
+            new EmFalta_GUI().setVisible(true);
         }
         if(m!=0){
             Fiscal[4]=m+" porcão de Maca";
@@ -146,7 +153,7 @@ public class Classes_DAO {
         ValorTotal=ValorTotal+caqui;
         caq=(int) (caq-(k*100)); 
         if(caq<=200){
-            new EmFalta().setVisible(true);
+            new EmFalta_GUI().setVisible(true);
         }
         if(c!=0){
             Fiscal[5]=c+"porcão de Caqui";
@@ -157,4 +164,17 @@ public class Classes_DAO {
         
         System.out.println(Tam[0]+"Sabor"+Tam[1]+"Valor unitario"+valorUnitario+"Acompanhamentos:"+k+"porções de kiwi, Valor Total"+ValorTotal);
     }
+    
+    public static void atualizarEstoque(){
+    
+        EmFalta_GUI.lblEstqCaqui.setText(caq+"g");
+        EmFalta_GUI.lblEstqPera.setText(per+"g");
+        EmFalta_GUI.lblEstqMorango.setText(morang+"g");
+        EmFalta_GUI.lblEstqBanana.setText(banan+"g");
+        EmFalta_GUI.lblEstqPera.setText(per+"g");
+        EmFalta_GUI.lblEstqMaca.setText(mac+"g");
+        EmFalta_GUI.lblEstqKiwi.setText(kiwi+"g");
+        
+    }
+    
 }

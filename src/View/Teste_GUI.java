@@ -272,6 +272,7 @@ public class Teste_GUI extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         boolean tela=true;
+        model.Classes_DAO.estoque(tela);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void Adicionar_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Adicionar_btnActionPerformed
