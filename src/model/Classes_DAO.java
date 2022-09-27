@@ -8,7 +8,18 @@ import static View.Cliente_GUI.txtdTel;
 import static View.Cliente_GUI.lblEftd;
 import View.EmFalta_GUI;
 import View.Sabores_GUI;
-import static View
+import static View.Nota_Fiscal_GUI.lblFiscalNome;
+import static View.Nota_Fiscal_GUI.lblFiscalCpf;
+import static View.Nota_Fiscal_GUI.lblFiscalTelefone;
+import static View.Nota_Fiscal_GUI.lblFiscalPreco;
+import static View.Nota_Fiscal_GUI.lblFiscalTam;
+import static View.Nota_Fiscal_GUI.lblFiscalChoco;
+import static View.Nota_Fiscal_GUI.lblFiscalKiwi;
+import static View.Nota_Fiscal_GUI.lblFiscalMorango;
+import static View.Nota_Fiscal_GUI.lblFiscalPera;
+import static View.Nota_Fiscal_GUI.lblFiscalMaca;
+import static View.Nota_Fiscal_GUI.lblFiscalBanana;
+import static View.Nota_Fiscal_GUI.lblFiscalCaqui;
 import static View.Sabores_GUI.Branco;
 import static View.Sabores_GUI.Leite;
 import static View.Sabores_GUI.b;
@@ -37,11 +48,12 @@ import View.Nota_Fiscal_GUI;
 import javax.swing.JOptionPane;
 import static model.Variaveis.branco;
 import static model.Variaveis.meio_amargo;
-
+import static View.Nota_Fiscal_GUI.lblFiscalChoco;
 
 
 public class Classes_DAO {
     public static int i=0;
+    public static String[] pedido = new String[7];
     public static String[] Tam = new String[8];
     public static String[] Fiscal = new String[6];
     public static float ValorTotal=0;
@@ -74,7 +86,19 @@ public class Classes_DAO {
     public static void abrirFiscal(boolean tela){
     
         new Nota_Fiscal_GUI().setVisible(tela);
-        lblFiscalNome.setText("")
+        lblFiscalNome.setText(clienteNome);
+        lblFiscalCpf.setText(clienteCpf);
+        lblFiscalTelefone.setText(clienteTel);
+        lblFiscalPreco.setText(String.valueOf(ValorTotal));
+        lblFiscalTam.setText(pedido[0]);
+        lblFiscalChoco.setText(pedido[1]);
+        lblFiscalKiwi.setText(pedido[2]);
+        lblFiscalMorango.setText(pedido[3]);
+        lblFiscalPera.setText(pedido[4]);
+        lblFiscalBanana.setText(pedido[5]);
+        lblFiscalMaca.setText(pedido[6]);
+        lblFiscalCaqui.setText(pedido[7]);
+        
     }
     
     public static void Tamanho(){
@@ -95,13 +119,13 @@ public class Classes_DAO {
             valorUnitario=(float) 11.00;
         }
         if(meioAmargo.isSelected()){
-            Tam[1]=" Chocolate meio-Amargo";
+            Tam[1]="Meio-Amargo";
         }
         if(Branco.isSelected()){
-            Tam[1]="Chocolate Branco";
+            Tam[1]="Branco";
         }
         if(Leite.isSelected()){
-            Tam[1]="Chocolate ao Leite";
+            Tam[1]="Leite";
         }
         
         
@@ -118,8 +142,9 @@ public class Classes_DAO {
             new EmFalta_GUI().setVisible(true);
         }
         if(k!=0){
-            Fiscal[0]=k+" porcão de kiwi";
-           
+            Fiscal[0]="Porções de Kiwi: "+k;
+        }else{
+            Fiscal[0]="";
         }
         
     }
@@ -131,8 +156,9 @@ public class Classes_DAO {
             new EmFalta_GUI().setVisible(true);
         }
         if(g!=0){
-            Fiscal[1]=g+" porcão de morango";
-            
+            Fiscal[1]="Porçoes de Morango: "+g;
+        }else{
+            Fiscal[1]="";
         }
     }
     public static void Pera() {
@@ -143,8 +169,9 @@ public class Classes_DAO {
             new EmFalta_GUI().setVisible(true);
         }
         if(p!=0){
-            Fiscal[2]=p+" porcão de pera";
-            
+            Fiscal[2]="Porções de Pera: "+p;
+        }else{
+            Fiscal[2]="";
         }
     }
     public static void Banana() {
@@ -155,8 +182,9 @@ public class Classes_DAO {
             new EmFalta_GUI().setVisible(true);
         }
         if(b!=0){
-            Fiscal[3]=b+" porcão de banana";
-           
+            Fiscal[3]="Porções de Banana: "+b;
+        }else{
+            Fiscal[3]="";
         }
     }
     public static void Maca() {
@@ -167,8 +195,9 @@ public class Classes_DAO {
             new EmFalta_GUI().setVisible(true);
         }
         if(m!=0){
-            Fiscal[4]=m+" porcão de Maca";
-            
+            Fiscal[4]="Porções de Maçã: "+m;
+        } else{
+            Fiscal[4]="";
         }
     }
     public static void Caqui() {
@@ -179,19 +208,18 @@ public class Classes_DAO {
             new EmFalta_GUI().setVisible(true);
         }
         if(c!=0){
-            Fiscal[5]=c+"porcão de Caqui";
-            
+            Fiscal[5]="Porções de Caqui: "+c;
+        } else{
+            Fiscal[5]="";
         }
+        
     }
     public static void NotaFiscal(){
         
-        String Pedido = (Tam[0]+"Sabor"+Tam[1]+"Valor unitario"+valorUnitario+"Acompanhamentos:\n");
-        for(i=0;i<6;i++){
-            
-            if(Fiscal[i]!=null){
-                System.out.println(Fiscal[i]+" Preço unitario da porção: R$3,00");
-            }
-            
+        pedido[0] = ("Tamanho: "+Tam[0]);
+        pedido[1] = ("Chocolate: "+Tam[1]);
+        for(i=2;i<6;i++){
+            pedido[i] = Fiscal[i-2];
         }
     }
     
@@ -291,7 +319,7 @@ public class Classes_DAO {
     
         clienteNome = txtNome.getText();
         clienteCpf = txtCpf.getText();
-        clienteNome = txtdTel.getText();
+        clienteTel = txtdTel.getText();
         lblEftd.setText("Efetuado");
         
     }
