@@ -29,41 +29,70 @@ public class Nota_Fiscal_GUI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         Pessoa = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        lblListaPedido = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Nota Fiscal:");
+        jPanel1.setLayout(null);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 337, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Pessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(Pessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(553, Short.MAX_VALUE))
-        );
+        jLabel1.setText("Nota Fiscal:");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(29, 14, 337, 14);
+        jPanel1.add(Pessoa);
+        Pessoa.setBounds(29, 46, 75, 19);
+
+        jLabel2.setText("Nome:");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(29, 71, 50, 14);
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(100, 50, 88, 20);
+
+        jLabel4.setText("CPF:");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(29, 91, 23, 14);
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(100, 80, 180, 20);
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(100, 110, 220, 20);
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(20, 280, 270, 40);
+        jPanel1.add(lblListaPedido);
+        lblListaPedido.setBounds(20, 190, 300, 60);
+
+        jLabel9.setText("Telefone:");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(29, 111, 50, 14);
+
+        jLabel8.setText("Pedido do cliente");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(20, 170, 120, 14);
+
+        jLabel10.setText("Preço");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(20, 260, 120, 14);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -107,6 +136,16 @@ public class Nota_Fiscal_GUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Pessoa;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel lblListaPedido;
     // End of variables declaration//GEN-END:variables
 }

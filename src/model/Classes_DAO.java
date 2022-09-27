@@ -2,8 +2,13 @@
 package model;
 
 
+import static View.Cliente_GUI.txtCpf;
+import static View.Cliente_GUI.txtNome;
+import static View.Cliente_GUI.txtdTel;
+import static View.Cliente_GUI.lblEftd;
 import View.EmFalta_GUI;
 import View.Sabores_GUI;
+import static
 import static View.Sabores_GUI.Branco;
 import static View.Sabores_GUI.Leite;
 import static View.Sabores_GUI.b;
@@ -16,18 +21,22 @@ import static View.Sabores_GUI.medio;
 import static View.Sabores_GUI.meioAmargo;
 import static View.Sabores_GUI.p;
 import static View.Sabores_GUI.pequeno;
-import static model.Estoque.ao_leite;
-import static model.Estoque.banan;
-import static model.Estoque.caq;
-import static model.Estoque.kiwi;
-import static model.Estoque.mac;
-import static model.Estoque.morang;
-import static model.Estoque.per;
+import static model.Variaveis.ao_leite;
+import static model.Variaveis.banan;
+import static model.Variaveis.caq;
+import static model.Variaveis.kiwi;
+import static model.Variaveis.mac;
+import static model.Variaveis.morang;
+import static model.Variaveis.per;
+import static model.Variaveis.clienteNome;
+import static model.Variaveis.clienteCpf;
+import static model.Variaveis.clienteTel;
 import View.EmFalta_GUI;
 import View.InputIngrediente_GUI;
+import View.Nota_Fiscal_GUI;
 import javax.swing.JOptionPane;
-import static model.Estoque.branco;
-import static model.Estoque.meio_amargo;
+import static model.Variaveis.branco;
+import static model.Variaveis.meio_amargo;
 
 
 
@@ -60,6 +69,12 @@ public class Classes_DAO {
     public static void inserirIngr(boolean tela){
         
         new InputIngrediente_GUI().setVisible(tela);
+    }
+    
+    public static void abrirFiscal(boolean tela){
+    
+        new Nota_Fiscal_GUI().setVisible(tela);
+        lblFiscalNome.setText("")
     }
     
     public static void Tamanho(){
@@ -170,8 +185,9 @@ public class Classes_DAO {
     }
     public static void NotaFiscal(){
         
-        System.out.println(Tam[0]+"Sabor"+Tam[1]+"Valor unitario"+valorUnitario+"Acompanhamentos:\n");
+        String Pedido = (Tam[0]+"Sabor"+Tam[1]+"Valor unitario"+valorUnitario+"Acompanhamentos:\n");
         for(i=0;i<6;i++){
+            
             if(Fiscal[i]!=null){
                 System.out.println(Fiscal[i]+" Preço unitario da porção: R$3,00");
             }
@@ -270,6 +286,14 @@ public class Classes_DAO {
             ao_leite = ao_leite + qntd;
         }
     
+    }
+    public static void cadCliente (){
+    
+        clienteNome = txtNome.getText();
+        clienteCpf = txtCpf.getText();
+        clienteNome = txtdTel.getText();
+        lblEftd.setText("Efetuado");
+        
     }
 
 }
