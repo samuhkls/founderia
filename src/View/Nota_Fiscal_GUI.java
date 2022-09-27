@@ -30,12 +30,12 @@ public class Nota_Fiscal_GUI extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         Pessoa = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblFiscalNome = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        lblListaPedido = new javax.swing.JLabel();
+        lblFiscalCpf = new javax.swing.JLabel();
+        lblFiscalTelefone = new javax.swing.JLabel();
+        lblFiscalPreco = new javax.swing.JLabel();
+        lblFiscalPedido = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -53,20 +53,20 @@ public class Nota_Fiscal_GUI extends javax.swing.JFrame {
         jLabel2.setText("Nome:");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(29, 71, 50, 14);
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 50, 88, 20);
+        jPanel1.add(lblFiscalNome);
+        lblFiscalNome.setBounds(100, 50, 200, 20);
 
         jLabel4.setText("CPF:");
         jPanel1.add(jLabel4);
         jLabel4.setBounds(29, 91, 23, 14);
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(100, 80, 180, 20);
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(100, 110, 220, 20);
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(20, 280, 270, 40);
-        jPanel1.add(lblListaPedido);
-        lblListaPedido.setBounds(20, 190, 300, 60);
+        jPanel1.add(lblFiscalCpf);
+        lblFiscalCpf.setBounds(100, 80, 200, 20);
+        jPanel1.add(lblFiscalTelefone);
+        lblFiscalTelefone.setBounds(100, 110, 220, 20);
+        jPanel1.add(lblFiscalPreco);
+        lblFiscalPreco.setBounds(20, 280, 270, 40);
+        jPanel1.add(lblFiscalPedido);
+        lblFiscalPedido.setBounds(20, 190, 300, 60);
 
         jLabel9.setText("Telefone:");
         jPanel1.add(jLabel9);
@@ -138,14 +138,14 @@ public class Nota_Fiscal_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblListaPedido;
+    public static javax.swing.JLabel lblFiscalCpf;
+    public static javax.swing.JLabel lblFiscalNome;
+    public static javax.swing.JLabel lblFiscalPedido;
+    public static javax.swing.JLabel lblFiscalPreco;
+    public static javax.swing.JLabel lblFiscalTelefone;
     // End of variables declaration//GEN-END:variables
 }

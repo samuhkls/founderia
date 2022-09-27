@@ -8,7 +8,7 @@ import static View.Cliente_GUI.txtdTel;
 import static View.Cliente_GUI.lblEftd;
 import View.EmFalta_GUI;
 import View.Sabores_GUI;
-import static
+import static View
 import static View.Sabores_GUI.Branco;
 import static View.Sabores_GUI.Leite;
 import static View.Sabores_GUI.b;
